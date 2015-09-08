@@ -1,0 +1,14 @@
+10  REM anagrams
+20  INPUT L$(1),L$(2),L$(3),L$(4)30 PRINT
+40  FOR I1=1 to 4
+50  FOR I2=1 to 4
+60  IF I2=I1 then 130
+70  FOR I3=1 to 4
+80  IF I3=I1 then 120
+90  IF I3=I2 then 120
+100   LET I4=10-(I1+I2+I3)
+110   LPRINT L$(I1);L$(I2);L$(I3);L$(I4)
+120   NEXT I3
+130   NEXT I2
+140   NEXT I1
+150   END
